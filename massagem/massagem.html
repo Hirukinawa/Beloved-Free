@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/massagem.css">
+        <link rel="stylesheet" href="../styles/nMassagem.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Hind&family=Roboto&display=swap" rel="stylesheet">
+        <title>Beloved</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src='../images/logo-gold.png' id='imgHeader' alt='Logo Gold'>
+                <div class='menu-toggle' onclick='toggleMenu()'>
+                    <div class='barra'></div>
+                    <div class='barraGold'></div>
+                    <div class='barra'></div>
+                    <div class='barraGold'></div>
+                    <div class='barra'></div>
+                </div>
+                <menu id='menu-pc'>
+                    <ul><a href='../index.html'><strong>HOME</strong></a></ul>
+                    <ul><a href='../corpo/corpo.html'><strong>CORPO</strong></a></ul>
+                    <ul><a href='../massagem/massagem.html'><strong>MASSAGEM</strong></a></ul>
+                    <ul><a href='../rosto/rosto.html'><strong>ROSTO</strong></a></ul>
+                    <ul><a href='../clube/clube.html'><strong>CLUBE</strong></a></ul>
+                    <ul><a href='../formacao/formacao.html'><strong>FORMAÇÃO</strong></a></ul>
+                    <ul><a href='../belovedEquipamentos/belovedEquipamentos.html'><strong>BELOVED EQUIPAMENTOS</strong></a></ul>
+                    <ul class='header--ul' onmouseover='mouseOver()' onmouseout='mouseOut()' id='whatsList'>
+                        <a id='faleNoWhats'>
+                            <img id='whatsLogo' src='../images/whatsapp-gold3.png'>
+                            <strong id='fale'>FALE CONOSCO</strong>
+                        </a>
+                    </ul>
+                </menu>
+                <menu id='menu-mobile'>
+                    <div class='menu-list'>
+                        <li><a href='../index.html'><strong>HOME</strong></a></li>
+                        <li><a href='../corpo/corpo.html'><strong>CORPO</strong></a></li>
+                        <li><a href='../massagem/massagem.html'><strong>MASSAGEM</strong></a></li>
+                        <li><a href='../rosto/rosto.html'><strong>ROSTO</strong></a></li>
+                        <li><a href='../clube/clube.html'><strong>CLUBE</strong></a></li>
+                        <li><a href='../formacao/formacao.html'><strong>FORMAÇÃO</strong></a></li>
+                        <li><a href='../belovedEquipamentos/belovedEquipamentos.html'><strong>BELOVED EQUIPAMENTOS</strong></a></li>
+                        <li id='whatsListCel'>
+                            <a id='faleNoWhats'>
+                                <img id='whatsLogo' src='../images/whatsapp-gold3.png'>
+                                <strong id='fale'>FALE CONOSCO</strong>
+                            </a>
+                        </li>
+                    </div>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <!-- Page 1 -->
+            <section id="page1" class="page">
+                <div class="column">
+                    <h1 class="title">70% das pessoas que fazem massagem melhoram <span>a auto estima, diminuem o stress e as dores musculares</span></h1>
+                    <strong>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</strong>
+                    <br>
+                    <button id='botaoQuero'>
+                        <a>
+                            <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
+                        </a>
+                    </button>
+                    <br>
+                </div>
+            </section>
+            <!-- Page 2 -->
+            <section id="page2" class="page">
+                <div class="column">
+                    <h1 id="page2--title" class="title">Quais os benefícios <span>da massagem?</span></h1>
+                    <p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
+                </div>
+                <img id="page2--Img1" src="../images/massagem/pagina massagem.png" alt="" height="200px">
+            </section>
+            <!-- Page 3 -->
+            <section id="page3" class="page">
+                <h1 id="page3--title" class="title">PARA QUEM É INDICADO FAZER MASSAGENS?</h1>
+                    <div id="scrollMassagem" class="rowDiv">
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/3.png" alt="">
+                            <br>
+                            <strong class="page3--text">GESTANTES</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/4.png" alt="">
+                            <br>
+                            <strong class="page3--text">PESSOAS ESTRESSADAS</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/5.png" alt="">
+                            <br>
+                            <strong class="page3--text">ATLETAS</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/6.png" alt="">
+                            <br>
+                            <strong class="page3--text">PESSOAS COM DORES</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/2.png" alt="">
+                            <br>
+                            <strong class="page3--text">IDOSOS</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/3.png" alt="">
+                            <br>
+                            <strong class="page3--text">GESTANTES</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/4.png" alt="">
+                            <br>
+                            <strong class="page3--text">PESSOAS ESTRESSADAS</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/5.png" alt="">
+                            <br>
+                            <strong class="page3--text">ATLETAS</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/6.png" alt="">
+                            <br>
+                            <strong class="page3--text">PESSOAS COM DORES</strong>
+                            <br>
+                        </div>
+                        <div class="column">
+                            <img id="imagemIndicado" src="../images/massagem/2.png" alt="">
+                            <br>
+                            <strong class="page3--text">IDOSOS</strong>
+                            <br>
+                        </div>
+                    </div>
+                <br>
+                <br>
+                <div class="column">
+                    <button id='botaoQuero'>
+                        <a>
+                            <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
+                        </a>
+                    </button>
+                </div>
+                <br>
+            </section>
+            <!-- Page 4-5 -->
+            <section id="page4" class="page">
+                <h1 id="page4--title" class="title">CONHEÇA AS NOSSAS MASSAGENS</h1>
+                <div class="rowDiv">
+                    <div class='caixa'>
+                        <div class='circular'></div>
+                        <div id="drenagem" class='imagemCaixa'></div>
+                        <h2>DRENAGEM LINFÁTICA</h2>
+                        <p><span>A drenagem linfática </span>consiste numa massagem com maior precisão a atuação mais profunda que pode ajudar no tratamento da celulite e da gordura localizada, promovendo relaxamento muscular, além de combater a retenção de líquidos, ajudando a remodelar e definir a silhueta, facilitando a circulação sanguínea, prevenindo edemas e eliminando toxinas.</p>
+                    </div>
+                    <div class='caixa'>
+                        <div class='circular'></div>
+                        <div id="terapeutica" class='imagemCaixa'></div>
+                        <h2>MASSAGEM TERAPÊUTICA</h2>
+                        <p><span>A massagem terapêutica </span>serve para tratar ou prevenir determinados problemas de saúde como o stress, tensão nervosa, tendinites, entorses ou contraturas.</p>
+                    </div>
+                    <div class='caixa'>
+                        <div class='circular'></div>
+                        <div id="pedras" class='imagemCaixa'></div>
+                        <h2>MASSAGEM PEDRAS QUENTES</h2>
+                        <p><span>A aplicação de pedras quentes vulcânicas e basálticas, </span>cuidadosamente escolhidas em termos de tamanho e formato, aliada à pressão e manipulação corretas, e aplicadas nos pontos específicos pelo terapeuta, eleva os níveis de serotonina, o neurotransmissor associado à felidade e ao humor. Este método não apenas aprimora a memória, mas também contribui significativamente para a melhoria da qualidade do sono.</p>
+                    </div>
+                    <div class='caixa'>
+                        <div class='circular'></div>
+                        <div id="indian" class='imagemCaixa'></div>
+                        <h2>INDIAN HEAD MASSAGE</h2>
+                        <p><span>É aquela massagem que todos idealizamos, </span>sonhamos e que podemos concretizar. Tem o objetivo de remover toda e qualquer tipo de tensão, sobre os ombros, pescoço, cabeça e rosto, com técnicas baseadas numa forte tradição indiana.</p>
+                    </div>
+                    <div class='caixa'>
+                        <div class='circular'></div>
+                        <div id="relaxamento" class='imagemCaixa'></div>
+                        <h2>MASSAGEM DE RELAXAMENTO</h2>
+                        <p><span>Esta massagem </span>ajuda-o a aumentar a flexibilidade e aumenta a circulação sanguínea. Do ponto de vista psicológico, cria uma sensação de bem estar e alegria. A massagem relaxante ajuda a acalmar o corpo e a mente.</p>
+                    </div>
+                    <div class='caixa'>
+                        <div class='circular'></div>
+                        <div id="modeladora" class='imagemCaixa'></div>
+                        <h2>MASSAGEM MODELADORA</h2>
+                        <p><span>A massagem modeladora </span>é uma técnica direcionada para remodelar o corpo, utilizando movimentos firmes e específicos. Seu propósito é agir nas camadas mais profundas da pele, contribuindo para a redução de gorduras localizadas e aprimorando a circulação sanguínea.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <button id='botaoQuero'>
+                        <a>
+                            <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
+                        </a>
+                    </button>
+                </div>
+            </section>
+            <!-- Page 6 -->
+            <section id="formPage" class="page">
+                <form action='' method='post'>
+                    <div id='divForm'>
+                        <h1 id='titleWhite'>COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
+                        <!-- <h2>Cadastre-se na nossa lista VIP para receber mais informações</h2> -->
+                        <input type='email' id='inEmail' name='inEmail' placeholder='DIGITE AQUI SEU E-MAIL' required>
+                        <input type='tel' id='inFone' name='inFone' placeholder='DIGITE AQUI SEU WHATSAPP' required>
+                        <button type='button' onclick='submitForm()' id='formButton'>
+                            <strong class='page6--text'>QUERO PARTICIPAR</strong>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <!-- Page 7-8 -->
+            <section id="page7" class="page">
+                <div class="column">
+                    <h1 class="title">As 7 coisas mais importantes que você precisa <span>saber sobre massagens</span></h1>
+                    <strong id="page7--str">Fazer massagem regularmente pode oferecer diversos benefícios para o corpo e a mente.</strong>
+                    <div class="page7--row">
+                        <h2 class="page7--number">01</h2>
+                        <div class="page7--column">
+                            <strong class="page7--columnTitle">Relaxamento e Redução do Estresse</strong>
+                            <strong>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</strong>
+                        </div>
+                    </div>
+                    <div class="page7--row">
+                        <h2 class="page7--number">02</h2>
+                        <div class="page7--column">
+                            <strong class="page7--columnTitle">Melhoria do Sono</strong>
+                            <strong>A massagem relaxante pode contribuir para uma melhor qualidade de sono, proporcionando um estado de relaxamento que facilita o atordoamento.</strong>
+                        </div>
+                    </div>
+                    <div class="page7--row">
+                        <h2 class="page7--number">03</h2>
+                        <div class="page7--column">
+                            <strong class="page7--columnTitle">Fortalecimento do Sistema Imunológico</strong>
+                            <strong>Algumas pesquisas sugerem que a massagem regular pode fortalecer o sistema imunológico, aumentando a atividade das células brancas do sangue.</strong>
+                        </div>
+                    </div>
+                    <div class="page7--row">
+                        <h2 class="page7--number">04</h2>
+                        <div class="page7--column">
+                            <strong class="page7--columnTitle">Aumento da Consciência Corporal</strong>
+                            <strong>A massagem pode aumentar a consciência corporal, ajudando as pessoas a se tornarem mais conscientes de áreas de tensão e a adotarem uma postura mais equilibrada.</strong>
+                        </div>
+                    </div>
+                    <div class="page7--row">
+                        <h2 class="page7--number">05</h2>
+                        <div class="page7--column">
+                            <strong class="page7--columnTitle">Aceleração da Recuperação Pós-Exercício</strong>
+                            <strong>Atletas frequentemente recorrem à massagem para acelerar a recuperação muscular após o exercício intenso, reduzindo a dor e a rigidez.</strong>
+                        </div>
+                    </div>
+                    <div class="page7--row">
+                        <h2 class="page7--number">06</h2>
+                        <div class="page7--column">
+                            <strong class="page7--columnTitle">Melhoria da Circulação Sanguínea e Linfática</strong>
+                            <strong>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</strong>
+                        </div>
+                    </div>
+                    <div id="lastPage7--row" class="page7--row">
+                        <h2 class="page7--number">07</h2>
+                        <div class="page7--column">
+                            <strong class="page7--columnTitle">Melhoria de dores crônicas</strong>
+                            <strong>Massagens regulares podem aliviar significativamente a dor crônica, especialmente nas costas, no pescoço e em áreas propensas a tensões e inflamações. Isso ocorre devido ao relaxamento dos músculos tensos e à melhoria da circulação sanguínea, que juntos ajudam a reduzir a sensação de dor e promovem o bem-estar geral.</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Page 9 -->
+            <section id="page9" class="page">
+                    <div id="page9--c1" class="page9--column">
+                        <h1 id="h1Pos">Vamos <span>falar de</span> beleza?</h1>
+                        <img id="imgCelia" src="../images/massagem/14.png" alt="">
+                        <h2 id="h2Pos">CÉLIA PARDAL <br> <span>CEO - BELOVED</span></h2>
+                    </div>
+                    <div id="page9--c2" class="page9--column">
+                        <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
+                        <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
+                        <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
+                        <br>
+                        <a id="faleConosco">
+                            <button class="page9--button">
+                                <h2>MAIS INFORMAÇÕES FALE COM A BELOVED</h2>
+                            </button>
+                        </a>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <script src='https://kit.fontawesome.com/53a32fbcec.js' crossorigin='anonymous'></script>
+            <img src='../images/logo-gold.png' id='imgHeader'>
+            <div class='footerColumn'>
+                <h3>Contatos</h3>
+                <div class='rowDiv'>
+                    <i class='fas fa-phone'></i>
+                    (XX) XXXXX-XXXX<br>
+                </div>
+                <div class='rowDiv'>
+                    <i class='fa-brands fa-whatsapp'></i>
+                    (XX) XXXXX-XXXX<br>
+                </div>
+                <div class='rowDiv'>
+                    <i class='fas fa-envelope'></i>
+                    seuemail@dominio.com<br>
+                </div>
+                <div class='rowDiv'>
+                    <i class='fas fa-location-dot'></i>
+                    Seu endereço<br>
+                </div>
+                <div class='rowDiv'>
+                    <i class='fas fa-user-shield'></i>
+                    Política de Privacidade<br>
+                </div>
+                <div class='rowDiv'>
+                    <i class='fas fa-file-signature'></i>
+                    Termos e Condições<br>
+                </div>
+            </div>
+            <div class='footerColumnRight'>
+                <h3>Menu Rápido</h3>
+                <a href='../massagem/massagem.html'>Tratamentos - Massagens</a>
+                <a href='../rosto/rosto.html'>Tratamentos - Rosto</a>
+                <a href='../corpo/corpo.html'>Tratamentos - Corpo</a>
+                <a href='../formacao/formacao.html'>Formações</a>
+                <a href='../belovedEquipamentos/belovedEquipamentos.html'>Sobre Nós</a>
+                <a id='faleNoWhats'>Fale Conosco</a>
+            </div>
+        </footer>
+    </body>
+
+    <script src="../efeitos/base.js"></script>
+    <script src="../efeitos/scrollMassagem.js"></script>
+    <script>
+        var script = document.createElement('script')
+        if (window.innerWidth < 800) {
+            script.src = "../efeitos/mobileGrow.js";
+            document.head.appendChild(script);
+        } else {
+            script.src = "../efeitos/boxGrow.js";
+            document.head.appendChild(script);
+
+            var secondScript = document.createElement('script');
+            secondScript.src = "../efeitos/numberGrow.js";
+            document.head.appendChild(secondScript)
+        }
+    </script>
+
+</html>

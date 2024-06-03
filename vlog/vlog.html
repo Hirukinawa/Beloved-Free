@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/vlog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Hind&family=Roboto&display=swap" rel="stylesheet">
+    <title>Beloved</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src='../images/logo-gold.png' id='imgHeader' alt='Logo Gold'>
+            <div class='menu-toggle' onclick='toggleMenu()'>
+                <div class='barra'></div>
+                <div class='barraGold'></div>
+                <div class='barra'></div>
+                <div class='barraGold'></div>
+                <div class='barra'></div>
+            </div>
+            <menu id='menu-pc'>
+                <ul><a href='../index.html'><strong>HOME</strong></a></ul>
+                <ul><a href='../corpo/corpo.html'><strong>CORPO</strong></a></ul>
+                <ul><a href='../massagem/massagem.html'><strong>MASSAGEM</strong></a></ul>
+                <ul><a href='../rosto/rosto.html'><strong>ROSTO</strong></a></ul>
+                <ul><a href='../clube/clube.html'><strong>CLUBE</strong></a></ul>
+                <ul><a href='../formacao/formacao.html'><strong>FORMAÇÃO</strong></a></ul>
+                <ul><a href='../belovedEquipamentos/belovedEquipamentos.html'><strong>BELOVED EQUIPAMENTOS</strong></a></ul>
+                <ul class='header--ul' onmouseover='mouseOver()' onmouseout='mouseOut()' id='whatsList'>
+                    <a id='faleNoWhats'>
+                        <img id='whatsLogo' src='../images/whatsapp-gold3.png'>
+                        <strong id='fale'>FALE CONOSCO</strong>
+                    </a>
+                </ul>
+            </menu>
+            <menu id='menu-mobile'>
+                <div class='menu-list'>
+                    <li><a href='../index.html'><strong>HOME</strong></a></li>
+                    <li><a href='../corpo/corpo.html'><strong>CORPO</strong></a></li>
+                    <li><a href='../massagem/massagem.html'><strong>MASSAGEM</strong></a></li>
+                    <li><a href='../rosto/rosto.html'><strong>ROSTO</strong></a></li>
+                    <li><a href='../clube/clube.html'><strong>CLUBE</strong></a></li>
+                    <li><a href='../formacao/formacao.html'><strong>FORMAÇÃO</strong></a></li>
+                    <li><a href='../belovedEquipamentos/belovedEquipamentos.html'><strong>BELOVED EQUIPAMENTOS</strong></a></li>
+                    <li id='whatsListCel'>
+                        <a id='faleNoWhats'>
+                            <img id='whatsLogo' src='../images/whatsapp-gold3.png'>
+                            <strong id='fale'>FALE CONOSCO</strong>
+                        </a>
+                    </li>
+                </div>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <section class="page">
+            <div id="video-container">
+                <div id="video-wrapper">
+                    <iframe id="video-iframe" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                    <button id="close-video">X</button>
+                </div>
+            </div>
+            <div id="videos"></div>
+            <!-- <button id="buttonYouTube"><a href="https://youtube.com/@BelovedPortugal?si=fdga9Q497PPxY6hW" target="_blank"><strong>VEJA MAIS</strong></a></button> -->
+            <button id="buttonYouTube"><a href="https://www.youtube.com/@alanzoka/videos" target="_blank"><strong>VEJA MAIS</strong></a></button>
+        </section>
+    </main>
+    <footer>
+        <script src='https://kit.fontawesome.com/53a32fbcec.js' crossorigin='anonymous'></script>
+        <img src='../images/logo-gold.png' id='imgHeader'>
+        <div class='footerColumn'>
+            <h3>Contatos</h3>
+            <div class='rowDiv'>
+                <i class='fas fa-phone'></i>
+                (XX) XXXXX-XXXX<br>
+            </div>
+            <div class='rowDiv'>
+                <i class='fa-brands fa-whatsapp'></i>
+                (XX) XXXXX-XXXX<br>
+            </div>
+            <div class='rowDiv'>
+                <i class='fas fa-envelope'></i>
+                seuemail@dominio.com<br>
+            </div>
+            <div class='rowDiv'>
+                <i class='fas fa-location-dot'></i>
+                Seu endereço<br>
+            </div>
+            <div class='rowDiv'>
+                <i class='fas fa-user-shield'></i>
+                Política de Privacidade<br>
+            </div>
+            <div class='rowDiv'>
+                <i class='fas fa-file-signature'></i>
+                Termos e Condições<br>
+            </div>
+        </div>
+        <div class='footerColumnRight'>
+            <h3>Menu Rápido</h3>
+            <a href='../massagem/massagem.html'>Tratamentos - Massagens</a>
+            <a href='../rosto/rosto.html'>Tratamentos - Rosto</a>
+            <a href='../corpo/corpo.html'>Tratamentos - Corpo</a>
+            <a href='../formacao/formacao.html'>Formações</a>
+            <a href='../belovedEquipamentos/belovedEquipamentos.html'>Sobre Nós</a>
+            <a id='faleNoWhats'>Fale Conosco</a>
+        </div>
+    </footer>
+
+    <script src="../efeitos/base.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Carregar header e footer
+            $('#header').load('../components/header.html');
+            $('#footer').load('../components/footer.html');
+
+            // Função para carregar vídeos do YouTube
+            function loadYouTubeVideos() {
+                const apiKey = 'AIzaSyAYgGXDbFPr14eb9DUTv9yvp_gAjQGUF2A';
+                //const channelId = 'UC0Xg3HaPasKRbHb3cld8smg';
+                const channelId = 'UCIwspRtKNszHhIhl36gREjQ';
+                const apiURL = `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channelId}&key=${apiKey}`;
+
+                $.get(apiURL, function(data) {
+                    const uploadsPlaylistId = data.items[0].contentDetails.relatedPlaylists.uploads;
+                    const playlistItemsURL = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=16&key=${apiKey}`;
+
+                    $.get(playlistItemsURL, function(playlistData) {
+                        if (playlistData.items.length === 0) {
+                            $('#videos').html('<h2>Nenhum vídeo encontrado</h2>');
+                        } else {
+                            playlistData.items.forEach(video => {
+                                const videoId = video.snippet.resourceId.videoId;
+                                const thumbnail = video.snippet.thumbnails.medium.url;
+                                const videoTitle = video.snippet.title;
+                                $('#videos').append(`
+                                    <div class='itemVideo' data-video-id='${videoId}'>
+                                        <div class='thumb'>
+                                            <a class='video-link' data-video-id='${videoId}'><img class='thumbImage' src='${thumbnail}'></a>
+                                        </div>
+                                        <h1>${videoTitle}</h1>
+                                    </div>
+                                    <hr>
+                                `);
+                            });
+                        }
+                    }).fail(function() {
+                        $('#videos').html('<p class="errorText">Erro ao carregar vídeos. Por favor, verifique sua conexão com a internet e recarregue a página.</p>');
+                    });
+                }).fail(function() {
+                    $('#videos').html('<p class="errorText">Erro ao acessar a API do YouTube. Por favor, tente novamente mais tarde.</p>');
+                });
+            }
+
+            // Chamar função para carregar vídeos ao carregar a página
+            loadYouTubeVideos();
+
+            // Lógica de exibição do vídeo
+            $(document).on('click', '.itemVideo', function(e) {
+                e.preventDefault();
+                var videoId = $(this).data('video-id');
+                var embedUrl = "https://www.youtube.com/embed/" + videoId;
+                $('#video-iframe').attr('src', embedUrl);
+                $('#video-container').fadeIn();
+            });
+
+            $('#close-video').click(function() {
+                $('#video-container').fadeOut();
+                $('#video-iframe').attr('src', '');
+            });
+        });
+    </script>
+</body>
+</html>

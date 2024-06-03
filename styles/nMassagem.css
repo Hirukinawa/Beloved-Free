@@ -1,0 +1,112 @@
+#page3 {
+    overflow: hidden;
+    background: linear-gradient(to right, white, transparent, transparent, transparent, transparent, white);
+    z-index: 1;
+}
+
+#scrollMassagem {
+    width: 200%;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes botaoQueroAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* #menu-pc strong:hover:not(#fale) {
+    position: relative;
+    padding: 0.5rem;
+    background: linear-gradient(125deg, var(--corBotao), var(--corBotao), yellow, var(--corBotao), var(--corBotao), var(--corBotao), yellow, var(--corBotao), var(--corBotao));
+    background-size: 200%;
+    animation: botaoQueroAnimation 0.5s ease forwards;
+    border-radius: 2.5rem;
+    z-index: 1;
+}
+
+menu strong:hover::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-color: white;
+    border-radius: 2.5rem;
+    z-index: -1;
+} */
+
+#botaoQuero:hover, .page9--button:hover {
+    border: none;
+    outline: none;
+    position: relative;
+    background: linear-gradient(125deg, var(--corBotao), var(--corBotao), yellow, var(--corBotao), var(--corBotao), var(--corBotao), yellow, var(--corBotao), var(--corBotao));
+    background-size: 200%;
+    animation: botaoQueroAnimation 0.5s ease forwards;
+    z-index: 2;
+}
+
+#botaoQuero:hover::before, .page9--button:hover::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background-color: black;
+    border-radius: 2.5rem;
+    z-index: 1;
+}
+
+.page9--button h2 {
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes scrollCel {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-169%);
+    }
+}
+
+@media (max-width: 800px) {
+
+    .page9--button {
+        margin-bottom: 2rem;
+    }
+    #scrollMassagem {
+        flex-wrap: nowrap;
+        column-gap: 2rem;
+        align-items: flex-start;
+        height: fit-content;
+        animation: scrollCel 5s linear infinite;
+    }
+
+    #scrollMassagem .column {
+        align-items: center;
+        text-align: center;
+    }
+}

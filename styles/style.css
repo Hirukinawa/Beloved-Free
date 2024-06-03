@@ -1,0 +1,1194 @@
+@font-face {
+    font-family: 'mango';
+    src: url('../fonts/black-mango-font-modern-beauty-family/TTF/BlackMango-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mango-light';
+    src: url('../fonts/black-mango-font-modern-beauty-family/TTF/BlackMango-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'codec';
+    src: url('../fonts/codec-pro/CodecPro-Regular.ttf') format('truetype');
+}
+
+:root {
+    --verdeWhats: rgb(37, 211, 102);
+    --corCaixa: #DFBD5F;
+    --contornoCaixa: #BC9722;
+    --corTitulo: #8D773A;
+    --corBotao: rgb(200, 153, 36);
+    --number7Color: #8e753a;
+}
+
+h1 {
+    font-family: 'mango', sans-serif;
+    color: var(--corTitulo);
+    text-align: center;
+    font-weight: bold;
+}
+
+main {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+span {
+    color: var(--contornoCaixa);
+}
+
+p, strong {
+    font-family: 'codec', sans-serif;
+    color: var(--contornoCaixa);
+    line-height: 1.33;
+    font-size: 1.5rem;
+}
+
+a {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3, #titleWhite {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+ul, li, a, ul p {
+    color: #e5c477;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: #c89924;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+input {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 55%;
+    height: 10%;
+    border: none;
+    border-radius: 2.25rem;
+}
+
+input::placeholder {
+    font-size: 1.25rem;
+}
+
+i {
+    color: #e5c477;
+}
+
+.rowDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    height: auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+/* --- Header --- */
+
+header {
+    padding: 16px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-pc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu-pc strong {
+    font-size: .95rem;
+}
+
+#menu-pc strong:hover:not(#fale) {
+    color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.rowHeader {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0px;
+}
+
+header #faleNoWhats:hover {
+    color: var(--verdeWhats);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+header #imgHeader {
+    height: 80px;
+}
+
+/* --- Page 1 --- */
+
+#page1 {
+    min-height: 83vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#page1 h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+#page1 .column {
+    width: 80vw;
+    max-width: 100vw;
+    min-height: 80%;
+    height: 90%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#page1 .column strong {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Page 2 --- */
+
+#page2 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 0px;
+}
+
+#page2--Img1 {
+    width: auto;
+    height: 100vh;
+}
+
+#page2 .title {
+    font-family: 'mango-light', sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    text-align: start;
+}
+
+#page2 .title span {
+    display: block;
+}
+
+#page2 .column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    text-align: justify;
+}
+
+#page2 .column p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.page2--columnImg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* --- Page 3 --- */
+
+#page3 .title {
+    color: var(--contornoCaixa);
+    margin-bottom: 3rem;;
+}
+
+.page3--text {
+    font-size: 1.25rem;
+}
+
+#imagemIndicado {
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+/* --- Page 4 --- */
+
+/* --corCaixa: #DFBD5F;
+    --contornoCaixa: #BC9722; */
+
+#page4 .title {
+    color: var(--contornoCaixa);
+}
+
+.circular {
+    position: absolute;
+    top: -100px;
+    min-width: 70%;
+    width: 70%;
+    max-width: 300px;
+    padding-bottom: 70%;
+    background-color: var(--contornoCaixa);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.caixa, .circular {
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.445);
+}
+
+.caixa {
+    padding: 0 1.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    width: 25%;
+    background-color: var(--corCaixa);
+    border: 4px solid var(--contornoCaixa);
+    border-radius: 1em;
+}
+
+.imagemCaixa {
+    min-width: 45%;
+    width: 45%;
+    max-width: 300px;
+    padding-bottom: 45%;
+    border: 4px solid var(--corCaixa);
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    z-index: 2;
+}
+
+.caixa span {
+    color: white
+}
+
+.caixa p {
+    font-size: 1.15rem;
+    margin: 8px 0px;
+    color: var(--corTitulo);
+}
+
+.caixa h2 {
+    text-align: center;
+    color: white;
+    font-family: "mango", sans-serif;
+    margin-top: 20%;
+    margin-bottom: 1rem;
+}
+
+.boxGrow {
+    transform: scale(1.05);
+    background-color: #726131;
+    border-color: #726131;
+    transition: transform 0.5s;
+}
+
+.boxGrow .circular {
+    transform: scale(1.1);
+    transform-origin: top;
+    background-color: #726131;
+    transition: transform 0.5s;
+    box-shadow: none;
+}
+
+.boxGrow .imagemCaixa {
+    border-color: #ecc440;
+    border-color: yellow;
+    /* transform: scale(1.1);
+    transform-origin: top; */
+}
+
+/* .boxGrow h2 {
+    margin-top: 27%;
+} */
+
+.boxGrow span,
+.boxGrow p {
+    color: white;
+}
+
+/* --- Page 5 --- */
+
+.page5--textItem {
+    color: var(--corTitulo);
+    font-size: 1.15rem;
+}
+
+/* --- Page 6 --- */
+
+#formPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divForm {
+    padding: 2rem;
+    padding-top: 1rem;
+    min-width: 70vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    background-color: var(--corBotao);
+    text-align: center;
+}
+
+#divForm h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: -10px;
+}
+
+#formButton {
+    width: 33%;
+    height: 10%;
+    text-align: center;
+    border: none;
+    border-radius: 2.25rem;
+    background-color: #e5c477;
+}
+
+form strong {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#formButton:hover {
+    background-color: var(--number7Color);
+    transition: 0.3s;
+}
+
+/* --- Page 7 --- */
+
+.numberGrow .page7--columnTitle {
+    color: black;
+    transform: scale(1.2);
+    transform-origin: left top;
+}
+
+.numberGrow h2 {
+    color: black;
+    transform: scale(1.1);
+    transform-origin: right top;
+}
+
+.numberGrow strong:not(.page7--columnTitle) {
+    transform: scale(1.1);
+    transform-origin: left top;
+}
+
+.numberGrow h2,
+.numberGrow strong {
+    transition: transform 0.3s;
+}
+
+#page7--str {
+    font-size: 1.15rem;
+    text-align: center;
+    color: var(--number7Color);
+    margin-bottom: 1.5em;
+}
+
+#page7 .title {
+    max-width: 90vw;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#page7 .title span {
+    display: block;
+}
+
+#page7 .column {
+    row-gap: 2rem;
+}
+
+.page7--row {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.page7--column {
+    width: 70vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    align-self: flex-start;
+}
+
+.page7--number {
+    line-height: 0.9;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 8rem;
+    color: var(--number7Color);
+    align-self: flex-start;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+.page7--column strong {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.page7--columnTitle {
+    padding-bottom: .5rem;
+    color: #e5c477;
+}
+
+/* --- Page 8 --- */
+/* --- Page 9 --- */
+
+#page9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0px;
+}
+
+.page9--column {
+    max-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    font-size: 1.75rem;
+}
+
+.page9--column p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.page9--column h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.page9--column h1 span {
+    display: block;
+}
+
+.page9--column strong {
+    font-size: 1.15rem;
+    line-height: 2;
+}
+
+#page9--c2 {
+    align-self: center;
+}
+
+#h1Pos {
+    font-family: 'mango-light', sans-serif;
+    text-align: left;
+    font-size: 4.5rem;
+    position: absolute;
+    left: 55%;
+    z-index: 10;
+}
+
+#h1Pos span {
+    display: block;
+}
+
+#imgCelia {
+    z-index: 1;
+    align-self: flex-start;
+    position: relative;
+    left: -7rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+#h2Pos {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    z-index: 10;
+    position: absolute;
+    left: 70%;
+    bottom: 20%;
+    color: var(--corTitulo);
+    z-index: 10;
+    padding: 5px 10px;
+}
+
+#h2Pos span {
+    color: var(--contornoCaixa);
+}
+
+#faleConosco {
+    align-self: center;
+    color: white;
+}
+
+.page9--button {
+    cursor: pointer;
+    padding: 2rem;
+    border-radius: 2.5rem;
+}
+
+.page9--button h2 {
+    font-size: 1rem;
+}
+
+/* --- Footer --- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #323232;
+    margin-top: 0px;
+    padding: 20px 40px 60px 40px;
+    color: white;
+}
+
+footer #faleNoWhats:hover {
+    color: var(--verdeWhats);
+    transition: 0.3s;
+}
+
+footer #imgHeader {
+    height: 100px;
+    align-self: center;
+}
+
+footer h3 {
+    font-family: 'codec', sans-serif !important;
+    font-size: 2.25rem;
+    color: #e5c477;
+    margin-bottom: 1.5rem;
+}
+
+.footerColumn {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footerColumn .rowDiv, .footerColumn .rowDiv {
+    justify-content: flex-start;
+    column-gap: 1rem;
+}
+
+.footerColumnRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 1.25rem;
+}
+
+.footerColumn, footer a {
+    font-size: 1.15rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--corCaixa);
+    transition: 0.3s;
+}
+
+/* --- Componentes.php --- */
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-list {
+    display: none;
+}
+
+.barra {
+    width: 30px;
+    height: 5px;
+    background-color: var(--contornoCaixa);
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.barraGold {
+    width: 30px;
+    height: 5px;
+    background-color: transparent;
+}
+
+#botaoQuero {
+    min-width: 35vw;
+    max-width: 70vw;
+    height: 10vh;
+    border: none;
+    background-color: var(--corBotao);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#botaoQuero h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+button h1,
+button h2 {
+    z-index: 2;
+}
+
+/* Efeitos botaoQuero aqui */
+
+#whatsLogo {
+    margin-right: .5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#whatsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fale:hover {
+    color: var(--verdeWhats)
+}
+
+#whatsListCel a {
+    display: inline;
+}
+
+@media (max-width: 1400px) {
+
+    h4 {
+        font-size: 1.15rem;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    menu strong {
+        font-size: .90rem;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    b, h4 {
+        font-size: 1.15rem
+    }
+
+    menu strong {
+        font-size: .75rem;
+    }
+
+    #whatsLogo {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    #formButton {
+        min-height: 3rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 1180px) {
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    menu strong {
+        font-size: .70rem;
+    }
+
+    #whatsLogo {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .page5--textItem {
+        font-size: .90rem;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    h4 {
+        font-size: .95rem;
+    }
+
+    .page5--textItem {
+        font-size: .80rem;
+    }
+
+    menu strong {
+        font-size: .60rem;
+    }
+
+    .footerColumn {
+        font-size: 1rem;
+    }
+
+    .footerColumnRight {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    /* --- Header ---*/
+
+    nav {
+        flex-direction: column;
+    }
+
+    #menu-pc {
+        display: none;
+    }
+
+    #menu-mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: flex-start;
+    }
+
+    #menu-mobile a {
+        margin: 0;
+        display: inline;
+    }
+
+    #menu-mobile strong {
+        font-size: 1rem;
+    }
+
+    .menu-toggle {
+        width: 100%;
+        height: 3rem;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .menu-list {
+        display: none;
+        align-self: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* --- Footer ---*/
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer h3 {
+        margin: 2rem 0;
+    }
+
+    footer a, .footerColumn {
+        font-size: .8rem;
+    }
+
+    .footerColumn, .footerColumnRight {
+        row-gap: .25rem;
+    }
+
+    .footerColumnRight {
+        font-size: .8rem;
+        align-items: start;
+        text-align: start;
+    }
+
+    /* --- Tags --- */
+
+    body {
+        padding: 0px;
+        font-size: 1.25rem;
+    }
+
+    b, p {
+        font-size: 1.15rem;
+    }
+
+    input {
+        padding: 1rem;
+        width: 70%;
+    }
+
+    input::placeholder {
+        font-size: .9rem;
+    }
+
+    /* --- Classes --- */
+
+    #page1 .title {
+        max-width: 90vw;
+        font-size: 2.5rem;
+    }
+
+    .column {
+        width: auto
+    }
+
+    .page {
+        height: auto;
+        min-height: 10vh;
+        margin-bottom: 5rem;
+    }
+
+
+    /* --- Id's --- */
+
+    #page2 {
+        flex-direction: column;
+    }
+
+    #page2--Img1 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0px;
+        align-self: center;
+    }
+
+    #botaoQuero {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgHeader{
+        margin: 1rem 0px;
+    }
+
+    /* --- Page 1 --- */
+
+    #page1 {
+        height: auto;
+    }
+
+    #page1--button {
+        font-size: 1.25rem;
+    }
+
+    #page2 .title,
+    #page3 .title,
+    #page4 .title,
+    #page7 .title {
+        font-size: 2.5rem;
+    }
+
+    /* --- Page 2 --- */
+
+    .page2--row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 90vw;
+        text-align: center;
+    }
+
+    #page2 .column {
+        width: 90%;
+        text-align: start;
+    }
+
+    /* --- Page 3 --- */
+
+
+
+    /* --- Page 4 --- */
+
+    .page4--row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .circular {
+        position: absolute;
+        top: -4rem;
+        min-width: 250px;
+        width: 250px;
+        max-width: 250px;
+        min-height: 250px;
+        height: 250px;
+        max-height: 250px;
+        padding-bottom: 0;
+        z-index: -1;
+    }
+
+    .caixa {
+        margin-bottom: 5rem;
+        padding: 0 1.25rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border-radius: 1em;
+        align-items: center;
+        min-height: 5em;
+        height: fit-content;
+    }
+
+    .caixa h2 {
+        font-size: 1.75rem;
+        text-align: center;
+        font-family: "mango", sans-serif;
+        margin-top: 75px;
+        margin-bottom: 1rem;
+    }
+
+    .imagemCaixa {
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        padding-bottom: 0px;
+    }
+
+    .page5--textItem {
+        font-size: 1.25rem;
+    }
+
+    /* --- Page 5 --- */
+
+
+
+    /* --- Page 6 --- */
+
+    #formPage {
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+    }
+
+    #divForm {
+        justify-content: center;
+        row-gap: 2rem;
+        border-radius: 0px;
+        height: auto;
+        text-align: center;
+    }
+
+    #divForm h1 {
+        font-size: 2.5rem;
+    }
+
+    #formButton {
+        width: auto;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* --- Page 7 --- */
+
+    .numberGrow h2,
+    .numberGrow .page7--columnTitle,
+    .numberGrow strong:not(.page7--columnTitle) {
+        transform-origin: top;
+    }
+
+    .page7--number {
+        align-self: center;
+        font-size: 6rem;
+    }
+
+    .page7--columnTitle {
+        align-self: center;
+    }
+
+    .page7--row {
+        height: auto;
+        max-height: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    #lastPage7--row {
+        margin-bottom: 0px;
+    }
+
+    /* --- Page 8 --- */
+
+
+
+    /* --- Page 9 --- */
+
+    #page9 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page9--column {
+        text-align: justify;
+        min-width: 90%;
+        font-size: 1.75rem;
+        margin: 0px;
+    }
+
+    #h1Pos {
+        font-size: 2.75rem;
+        position: relative;
+        left: 0%;
+        z-index: 10;
+    }
+
+    #imgCelia {
+        z-index: 1;
+        align-self: center;
+        left: 0px;
+        position: relative;
+        width: auto;
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    #h2Pos {
+        width: 70%;
+        color: var(--corTitulo);
+        background-color: white;
+        z-index: 10;
+        padding: 5px;
+        position: absolute;
+        left: 30%;
+        bottom: 0%;
+    }
+
+    #h2Pos span {
+        color: var(--contornoCaixa);
+    }
+
+    .page9--button {
+        align-self: center;
+        width: 85vw;
+        padding: 1rem;
+    }
+
+    .page9--button h2 {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,425 @@
+#botaoQuero {
+    justify-content: center;
+    align-self: center;
+}
+
+#botaoQuero strong {
+    color: white;
+}
+
+/* --- Page 1 --- */
+
+.title {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* --- Page 2 --- */
+
+#page2 {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page2--title {
+    font-family: 'mango-light', sans-serif;
+    font-size: 4rem;
+}
+
+#page2--title span {
+    display: block;
+}
+
+#page2 .column:not(#page2--ColumnAb) {
+    padding: 20px;
+    background-image: url("../images/home/b-fundo.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#page2 .column p {
+    position: relative;
+    font-size: 1.15rem;
+    line-height: 1.75;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+#page2 .column p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--contornoCaixa);
+    border-radius: 10px;
+}
+
+#page2 > .rowDiv {
+    justify-content: flex-end;
+    width: 50%;
+    flex-wrap: nowrap;
+}
+
+#imgCelia {
+    width: 90%;
+    align-self: flex-end;
+    position: static;
+}
+
+#page2--ColumnAb {
+    position: relative;
+    right: -87%;
+    z-index: 3;
+}
+
+#page2--ColumnAb > h1 {
+    color: white;
+    align-self: center;
+}
+
+#page2--ColumnAb > img {
+    width: 200px;
+    height: auto;
+}
+
+/* --- Page 3-6 --- */
+
+.caixa {
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.caixa h2 {
+    margin-top: 40%;
+}
+
+#page3--title {
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+#descubra {
+    background-image: url("../images/home/b-fundo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: max-content;
+    padding: 3%;
+}
+
+#descubra h1 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.15;
+}
+
+#descubra h1 span {
+    display: block;
+}
+
+#page3 .rowDiv {
+    margin-top: 3rem;
+    row-gap: 15vh;
+    align-items: flex-start;
+}
+
+#page3 .rowDiv .column {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+#peeling {
+    background-image: url("../images/rosto/7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#botox {
+    background-image: url("../images/rosto/8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#acido {
+    background-image: url("../images/rosto/9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#limpeza {
+    background-image: url("../images/rosto/10.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#microagulha {
+    background-image: url("../images/rosto/11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#radio {
+    background-image: url("../images/rosto/12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hidragloss {
+    background-image: url("../images/rosto/13.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* -- Page 10 --- */
+
+#page9 {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#faleConosco {
+    width: 100%;
+}
+
+.page9--column {
+    align-self: center;
+    margin: 0 2rem;
+}
+
+.page9--column:not(#page9--c2) {
+    background-image: url("../images/home/b-fundo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page9--column h1 {
+    font-family: 'mango-light', sans-serif;
+    text-align: left;
+}
+
+.page9--button {
+    margin: 3rem 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+#page9--c2 {
+    align-self: flex-end;
+    margin: 0;
+}
+
+#page9--imgCelia {
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+#h2Pos {
+    width: auto;
+    color: var(--corTitulo);
+    background-color: transparent;
+    z-index: 10;
+    padding: 0px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-family: 'codec', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 800px) {
+
+
+    #botaoQuero {
+        align-self: center;
+        margin: auto;
+    }
+
+    #botaoQuero strong {
+        color: white;
+    }
+
+    /* --- Page 1 --- */
+
+
+    /* --- Page 2 --- */
+
+    #page2 {
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+
+    #page2 .column {
+        background-image: none;
+        padding: 0px;
+        align-self: center;
+        align-items: center;
+        order: 1;
+    }
+
+    #page2--title {
+        align-self: flex-start;
+    }
+
+    #page2 > .rowDiv {
+        position: relative;
+        order: 2;
+        width: 100%;
+    }
+
+    #imgCelia {
+        z-index: 2;
+        align-self: flex-end;
+        width: 100%;
+        margin: 0;
+        border-bottom: .5rem solid var(--corTitulo);
+        order: 3;
+    }
+
+    #page2--ColumnAb {
+        max-width: fit-content;
+        position: absolute;
+        z-index: 3;
+        left: 40vw;
+        right: initial;
+        bottom: 1rem;
+    }
+
+    #page2--ColumnAb > img {
+        width: 200px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* --- Page 3 --- */
+
+    #page3 .rowDiv .column {
+        width: 100%;
+    }
+
+    #descubra {
+        padding: 0 2rem;
+    }
+
+    #descubra h1 {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .circular {
+        position: absolute;
+        top: -4rem;
+        min-width: 250px;
+        width: 250px;
+        max-width: 250px;
+        min-height: 250px;
+        height: 250px;
+        max-height: 250px;
+        border-radius: 50%;
+        padding-bottom: 0;
+        z-index: -1;
+    }
+
+    .caixa {
+        margin-bottom: 5rem;
+        padding: 0 1.25rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 90%;
+        border-radius: 1em;
+        align-items: center;
+        min-height: 5em;
+        height: fit-content;
+    }
+
+    .caixa h2 {
+        font-size: 1.75rem;
+        text-align: center;
+        font-family: "mango", sans-serif;
+        margin-top: 75px;
+        margin-bottom: 1rem;
+    }
+
+    .imagemCaixa {
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        padding-bottom: 0px;
+    }
+
+    /* --- Page 10 --- */
+
+    #page9 {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page9--column {
+        margin: 0;
+        align-self: center;
+    }
+
+    .page9--column:not(#page9--c2) {
+        background-image: none;
+    }
+
+    .page9--column h1 {
+        font-size: 3rem;
+    }
+
+    .page9--button {
+        margin: 3rem 0;
+    }
+
+    #page9--c2 {
+        max-width: none;
+        width: 100vw;
+    }
+
+    #page9--imgCelia {
+        margin: 0px;
+        width: 100%;
+    }
+
+    #h2Pos {
+        width: auto;
+        color: #8D773A;
+        background-color: transparent;
+        z-index: 10;
+        padding: 0px;
+        position: absolute;
+        left: 10px;
+        top: -20px;
+        font-family: 'codec', sans-serif;
+        font-size: 1.25rem;
+    }
+
+}
