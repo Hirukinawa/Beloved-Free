@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/nMassagem.css">
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Hind&family=Roboto&display=swap" rel="stylesheet">
         <title>Beloved</title>
     </head>
@@ -19,4 +20,18 @@
     <script src="../scripts/base.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../scripts/headerFooter.js"></script>
+    <script>
+        var script = document.createElement('script')
+        if (window.innerWidth < 800) {
+            script.src = "../scripts/mobileGrow.js";
+            document.head.appendChild(script);
+        } else {
+            script.src = "../scripts/boxGrow.js";
+            document.head.appendChild(script);
+
+            var secondScript = document.createElement('script');
+            secondScript.src = "../scripts/numberGrow.js";
+            document.head.appendChild(secondScript)
+        }
+    </script>
 </html>

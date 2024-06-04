@@ -126,9 +126,11 @@
 }
 
 #descubra {
+    justify-self: center;
     width: 25%;
     align-self: center;
     padding: 0 2rem;
+    margin: 0 7%;
     background-image: url("../images/home/b-fundo.png");
     background-size: 100%;
     background-position: center;
@@ -155,6 +157,7 @@
 }
 
 #page3 .rowDiv {
+    margin: 4rem 0;
     row-gap: 15vh;
     align-items: flex-start;
 }

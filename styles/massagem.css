@@ -19,7 +19,7 @@
     width: 30%;
     padding-bottom: 30%;
     max-width: 300px;
-    border: 4px solid #e5c477;
+    border: 4px solid var(--corCaixa);
     border-radius: 50%;
     position: absolute;
     top: -80px;
