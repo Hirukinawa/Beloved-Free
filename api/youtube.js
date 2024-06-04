@@ -10,7 +10,8 @@ module.exports = async (req, res) => {
   });
 
   try {
-    const channelId = 'UCIwspRtKNszHhIhl36gREjQ';
+    //const channelId = 'UCIwspRtKNszHhIhl36gREjQ';
+    const channelId = process.env.YOUTUBE_CHANNEL_KEY;
     const channelResponse = await youtube.channels.list({
       part: 'contentDetails',
       id: channelId
