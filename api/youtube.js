@@ -3,13 +3,13 @@ require('dotenv').config();  // Carregar variáveis de ambiente do arquivo .env
 
 module.exports = async (req, res) => {
   const apiKey = process.env.YOUTUBE_API_KEY;
+  const channelId = process.env.YOUTUBE_CHANNEL_KEY;
   const youtube = google.youtube({
     version: 'v3',
     auth: apiKey
   });
 
   try {
-    const channelId = 'UC0Xg3HaPasKRbHb3cld8smg';
     const channelResponse = await youtube.channels.list({
       part: 'contentDetails',
       id: channelId
