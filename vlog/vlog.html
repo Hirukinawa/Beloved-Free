@@ -9,49 +9,7 @@
     <title>Beloved</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src='../images/logo-gold.png' id='imgHeader' alt='Logo Gold'>
-            <div class='menu-toggle' onclick='toggleMenu()'>
-                <div class='barra'></div>
-                <div class='barraGold'></div>
-                <div class='barra'></div>
-                <div class='barraGold'></div>
-                <div class='barra'></div>
-            </div>
-            <menu id='menu-pc'>
-                <ul><a href='../index.html'><strong>HOME</strong></a></ul>
-                <ul><a href='../corpo/corpo.html'><strong>CORPO</strong></a></ul>
-                <ul><a href='../massagem/massagem.html'><strong>MASSAGEM</strong></a></ul>
-                <ul><a href='../rosto/rosto.html'><strong>ROSTO</strong></a></ul>
-                <ul><a href='../clube/clube.html'><strong>CLUBE</strong></a></ul>
-                <ul><a href='../formacao/formacao.html'><strong>FORMAÇÃO</strong></a></ul>
-                <ul><a href='../belovedEquipamentos/belovedEquipamentos.html'><strong>BELOVED EQUIPAMENTOS</strong></a></ul>
-                <ul class='header--ul' onmouseover='mouseOver()' onmouseout='mouseOut()' id='whatsList'>
-                    <a id='faleNoWhats'>
-                        <img id='whatsLogo' src='../images/whatsapp-gold3.png'>
-                        <strong id='fale'>FALE CONOSCO</strong>
-                    </a>
-                </ul>
-            </menu>
-            <menu id='menu-mobile'>
-                <div class='menu-list'>
-                    <li><a href='../index.html'><strong>HOME</strong></a></li>
-                    <li><a href='../corpo/corpo.html'><strong>CORPO</strong></a></li>
-                    <li><a href='../massagem/massagem.html'><strong>MASSAGEM</strong></a></li>
-                    <li><a href='../rosto/rosto.html'><strong>ROSTO</strong></a></li>
-                    <li><a href='../clube/clube.html'><strong>CLUBE</strong></a></li>
-                    <li><a href='../formacao/formacao.html'><strong>FORMAÇÃO</strong></a></li>
-                    <li><a href='../belovedEquipamentos/belovedEquipamentos.html'><strong>BELOVED EQUIPAMENTOS</strong></a></li>
-                    <li id='whatsListCel'>
-                        <a id='faleNoWhats'>
-                            <img id='whatsLogo' src='../images/whatsapp-gold3.png'>
-                            <strong id='fale'>FALE CONOSCO</strong>
-                        </a>
-                    </li>
-                </div>
-            </menu>
-        </nav>
+    <header id="header">
     </header>
     <main>
         <section class="page">
@@ -62,59 +20,20 @@
                 </div>
             </div>
             <div id="videos"></div>
-            <!-- <button id="buttonYouTube"><a href="https://youtube.com/@BelovedPortugal?si=fdga9Q497PPxY6hW" target="_blank"><strong>VEJA MAIS</strong></a></button> -->
             <button id="buttonYouTube"><a href="https://www.youtube.com/@alanzoka/videos" target="_blank"><strong>VEJA MAIS</strong></a></button>
         </section>
     </main>
-    <footer>
-        <script src='https://kit.fontawesome.com/53a32fbcec.js' crossorigin='anonymous'></script>
-        <img src='../images/logo-gold.png' id='imgHeader'>
-        <div class='footerColumn'>
-            <h3>Contatos</h3>
-            <div class='rowDiv'>
-                <i class='fas fa-phone'></i>
-                (XX) XXXXX-XXXX<br>
-            </div>
-            <div class='rowDiv'>
-                <i class='fa-brands fa-whatsapp'></i>
-                (XX) XXXXX-XXXX<br>
-            </div>
-            <div class='rowDiv'>
-                <i class='fas fa-envelope'></i>
-                seuemail@dominio.com<br>
-            </div>
-            <div class='rowDiv'>
-                <i class='fas fa-location-dot'></i>
-                Seu endereço<br>
-            </div>
-            <div class='rowDiv'>
-                <i class='fas fa-user-shield'></i>
-                Política de Privacidade<br>
-            </div>
-            <div class='rowDiv'>
-                <i class='fas fa-file-signature'></i>
-                Termos e Condições<br>
-            </div>
-        </div>
-        <div class='footerColumnRight'>
-            <h3>Menu Rápido</h3>
-            <a href='../massagem/massagem.html'>Tratamentos - Massagens</a>
-            <a href='../rosto/rosto.html'>Tratamentos - Rosto</a>
-            <a href='../corpo/corpo.html'>Tratamentos - Corpo</a>
-            <a href='../formacao/formacao.html'>Formações</a>
-            <a href='../belovedEquipamentos/belovedEquipamentos.html'>Sobre Nós</a>
-            <a id='faleNoWhats'>Fale Conosco</a>
-        </div>
+    <footer id="footer">
     </footer>
 
-    <script src="../efeitos/base.js"></script>
+    <script src="../scripts/base.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
+    <script src="../scripts/headerFooter.js"></script>
+    <script src="../scripts/connectYoutube.js"></script>
+    <!-- <script>
         $(document).ready(function() {
             // Carregar header e footer
-            $('#header').load('../components/header.html');
-            $('#footer').load('../components/footer.html');
 
             // Função para carregar vídeos do YouTube
             function loadYouTubeVideos() {
@@ -171,6 +90,6 @@
                 $('#video-iframe').attr('src', '');
             });
         });
-    </script>
+    </script> -->
 </body>
 </html>
